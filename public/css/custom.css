@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand, sans-serif';
+    line-height: 1.5;
+    color: #555;
+}
+
+header {
+    background-color: aliceblue;
+    color: black;
+    padding: 2rem 1rem;;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 2rem 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;;
+}
+
+header nav ul li a:hover {
+    color: blue;
+}
+
+.jumbotron {
+    text-align: center;
+    padding: 150px 20px;
+    background-image: url('../img/desa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jumbotron h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;;
+}
+
+#tentang {
+    padding: 2rem 1rem;
+}
+
+#tentang .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tentang h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#tentang p {
+    font-size: 1.2rem;
+}
+
+#desa {
+    padding: 1rem;
+    background-color: azure;
+}
+
+#desa .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1.5rem;
+}
+
+.desa-item{
+    background-color: #f9f9f9;
+    padding: 0 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desa-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#testimoni {
+    padding: 2rem 1rem;
+}
+
+#testimoni .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-radius: 8px;
+	margin: 20px 0;
+	padding: 10px;
+	font-style: italic;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 1rem;
+	color: #555;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+footer {
+	background: aliceblue;
+	padding: 1rem 0;
+	text-align: center;
+	color: black;
+}
